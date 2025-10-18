@@ -30,7 +30,7 @@ COPY . .
 RUN mkdir -p /app/data /app/models /app/logs /app/cache
 
 # Set permissions
-RUN chmod +x /app/scripts/*.py
+RUN chmod +x /app/scripts/*.py 2>/dev/null || true
 
 # Create non-root user
 RUN useradd --create-home --shell /bin/bash app && \
@@ -45,4 +45,4 @@ HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
 EXPOSE 8000 8501
 
 # Default command
-CMD ["python", "-m", "uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["streamlit", "run", "app/streamlit_app.py", "--server.port", "8501", "--server.address", "0.0.0.0"]
