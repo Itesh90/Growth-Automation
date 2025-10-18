@@ -15,12 +15,13 @@ Based on the GitHub Actions pipeline dashboard showing failures in `lint`, `test
   - `tests/__init__.py` - Package initialization
   - `tests/test_simple.py` - Core functionality tests
 
-### 2. **Missing Dependencies**
-- **Problem**: Security tools (`safety`, `bandit`) not in requirements.txt
-- **Solution**: Added missing dependencies to `requirements.txt`
+### 2. **Missing Dependencies & Version Conflicts**
+- **Problem**: Security tools (`safety`, `bandit`) not in requirements.txt, plus dependency conflicts
+- **Solution**: Resolved dependency conflicts and added missing dependencies
 - **Added**:
-  - `safety==2.3.5` - Security vulnerability scanner
   - `bandit==1.7.5` - Security linter for Python
+  - `safety` - Installed separately in CI to avoid version conflicts
+- **Fixed**: Removed conflicting `safety` from requirements.txt and handled it in CI workflow
 
 ### 3. **CI/CD Configuration Issues**
 - **Problem**: Pipeline jobs failing without proper error handling
@@ -82,8 +83,8 @@ tests/test_simple.py::TestBasicFunctionality::test_headline_result_structure PAS
 4. **`.flake8`** - Linting configuration with proper exclusions
 
 ### **Updated Files**
-1. **`requirements.txt`** - Added `safety` and `bandit` dependencies
-2. **`.github/workflows/ci.yml`** - Improved error handling and job configuration
+1. **`requirements.txt`** - Added `bandit` dependency, removed conflicting `safety`
+2. **`.github/workflows/ci.yml`** - Improved error handling, separate safety installation
 3. **`Dockerfile`** - Fixed build issues and default command
 
 ---
