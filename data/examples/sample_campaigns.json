@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Fitness App Launch",
+    "base_copy": "Get fit at home in 30 days",
+    "tone": "Urgent",
+    "placement": "Social Ad",
+    "target_audience": "Fitness enthusiasts",
+    "expected_ctr": 0.025
+  },
+  {
+    "name": "SaaS Product Launch",
+    "base_copy": "Project management software for teams",
+    "tone": "Professional",
+    "placement": "Email Subject",
+    "target_audience": "Business professionals",
+    "expected_ctr": 0.018
+  },
+  {
+    "name": "Wellness Service",
+    "base_copy": "Online yoga classes for beginners",
+    "tone": "Casual",
+    "placement": "Display Ad",
+    "target_audience": "Health-conscious individuals",
+    "expected_ctr": 0.022
+  },
+  {
+    "name": "Financial Service",
+    "base_copy": "Tax filing service with guaranteed refund",
+    "tone": "Professional",
+    "placement": "Email Subject",
+    "target_audience": "Taxpayers",
+    "expected_ctr": 0.020
+  },
+  {
+    "name": "EdTech Platform",
+    "base_copy": "Learn coding in 12 weeks",
+    "tone": "Urgent",
+    "placement": "Social Ad",
+    "target_audience": "Career changers",
+    "expected_ctr": 0.024
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "tests": {
+    "demo_test": {
+      "test_id": "demo_test",
+      "variant_a": "Get 50% Off Today Only!",
+      "variant_b": "Transform Your Life in 30 Days",
+      "impressions_a": 10000,
+      "impressions_b": 10000,
+      "clicks_a": 505,
+      "clicks_b": 624,
+      "ctr_a": 0.0505,
+      "ctr_b": 0.0624,
+      "lift": 0.23564356435643552,
+      "p_value": 0.00026634643749345877,
+      "is_significant": 

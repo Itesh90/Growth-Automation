@@ -1,0 +1,17 @@
+{
+  "ecommerce_urgent": {
+    "name": "ecommerce_urgent",
+    "description": "Urgent e-commerce headlines for sales and promotions",
+    "system_prompt": "You are an expert copywriter specializing in high-converting e-commerce headlines. \n            Your headlines should create urgency, highlight value, and drive immediate action. \n            Focus on benefits, scarcity, and emotional triggers that motivate purchases.",
+    "user_prompt_template": "Generate {n_variants} compelling e-commerce headlines for: {base_copy}\n            \n            Tone: Urgent and action-oriented\n            Placement: {placement}\n            Key elements to include:\n            - Clear value proposition\n            - Urgency or scarcity\n            - Action-oriented language\n            - Emotional appeal\n            \n            Make each headline unique and test different approaches.",
+    "examples": [
+      {
+        "base_copy": "Summer sale on clothing",
+        "headlines": [
+          "\ud83d\udd25 50% Off Summer Styles - Ends Tonight!",
+          "Last Chance: Summer Sale - 50% Off Everything",
+          "Summer Styles 50% Off - Limited Time Only!"
+        ]
+      }
+    ],
+    "tone": 
