@@ -92,4 +92,4 @@ def get_database_url() -> str:
 
 def validate_api_keys() -> bool:
     """Validate that at least one LLM API key is configured."""
-    return bool(settings.openai_api_key or settings.anthropic_api_key)
+    return bool(settings.openai_api_key or settings.anthropic_api_key or settings.gemini_api_key)
